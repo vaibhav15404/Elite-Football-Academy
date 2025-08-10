@@ -2,7 +2,7 @@ const qrcode = require("qrcode-terminal");
 const { Client, LocalAuth } = require("whatsapp-web.js");
 const cron = require("node-cron");
 const mongoose = require("mongoose");
-const Student = require("./models/student");
+const Student = require("./models/Student");
 const Fee = require("./models/Fee");
 require("dotenv").config();
 
