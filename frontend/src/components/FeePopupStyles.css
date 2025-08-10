@@ -1,0 +1,111 @@
+.fee-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.fee-popup-content {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  border: 2px solid #ff2e2e;
+  box-shadow: 0 0 20px rgba(255, 46, 46, 0.5);
+  overflow-y: auto;
+  max-height: 90vh;
+  box-sizing: border-box;
+}
+
+.fee-popup-content h2,
+.fee-popup-content h3 {
+  color: #ff2e2e;
+  margin-bottom: 1rem;
+}
+
+.fee-popup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.fee-popup-table th,
+.fee-popup-table td {
+  border: 1px solid #444;
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.fee-popup-table th {
+  background-color: #2a2a2a;
+  color: #ff2e2e;
+}
+
+.fee-popup-form input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  background-color: #2a2a2a;
+  border: 1px solid #ff2e2e;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.fee-popup-btn {
+  background-color: #2a2a2a;
+  color: #ff2e2e;
+  border: 1px solid #ff2e2e;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.6rem;
+}
+
+.fee-popup-btn:hover {
+  background-color: #ff2e2e;
+  color: #fff;
+}
+
+.fee-popup-btn.red {
+  background-color: #ff2e2e;
+  color: #fff;
+  border: none;
+}
+
+.fee-popup-btn.red:hover {
+  background-color: #e60000;
+}
+
+.fee-popup-actions {
+  margin-top: 1rem;
+}
+
+.fee-popup-form {
+  overflow-x: hidden;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .fee-popup-content {
+    padding: 1rem;
+  }
+
+  .fee-popup-form input {
+    max-width: 100%;
+  }
+}

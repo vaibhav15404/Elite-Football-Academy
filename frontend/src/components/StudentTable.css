@@ -1,0 +1,71 @@
+.students-table {
+  padding: 2rem;
+  background-color: #121212;
+  color: #fff;
+}
+
+.table-title {
+  font-size: 1.8rem;
+  color: #ff4c4c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.custom-table th {
+  background-color: #1e1e1e;
+  color: #ff4c4c;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.row-even {
+  background-color: #1a1a1a;
+}
+
+.row-odd {
+  background-color: #2a2a2a;
+}
+
+.custom-table tr:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.view-fee-btn {
+  background-color: transparent;
+  color: #ff4c4c;
+  border: 1px solid #ff4c4c;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.view-fee-btn:hover {
+  background-color: #ff4c4c;
+  color: #121212;
+}
+
+.no-data {
+  padding: 1rem;
+  text-align: center;
+  color: #bbb;
+}

@@ -1,0 +1,71 @@
+
+.coach-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #121212;
+  color: white;
+  padding: 60px 20px;
+  gap: 40px;
+  min-height: 90vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.coach-image {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(139, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.coach-image:hover {
+  transform: scale(1.05);
+}
+
+.coach-text {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.coach-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #FF4136;
+}
+
+.coach-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.coach-link {
+  font-size: 1rem;
+  color: #FF4136;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+/* .coach-link:hover {
+  border-color: #FF4136;
+} */
+
+.coach-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.coach-button:hover {
+  background-color: #a80000;
+  transform: scale(1.05);
+}

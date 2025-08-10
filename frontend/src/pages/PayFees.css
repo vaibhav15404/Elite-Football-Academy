@@ -1,0 +1,77 @@
+.pay-fees-container {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.pay-fees-container h2 {
+  color: #ff3333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pay-fees-card {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff3333;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code {
+  width: 200px;
+  margin-bottom: 20px;
+  border: 3px solid #ff3333;
+  border-radius: 8px;
+}
+
+.fee-details {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.fee-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.fee-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fee-form label {
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
+.fee-form input {
+  padding: 8px;
+  background-color: #2e2e2e;
+  border: 1px solid #ff3333;
+  color: white;
+  border-radius: 5px;
+}
+
+.fee-form button {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.fee-form button:hover {
+  background-color: #e60000;
+}

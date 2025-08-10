@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #eee;
+}

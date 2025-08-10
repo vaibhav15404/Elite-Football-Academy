@@ -1,0 +1,82 @@
+/* Overlay and base layout */
+.student-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.student-popup-content {
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 550px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+/* Scrollable input form */
+.student-popup-form-scroll {
+  max-height: 50vh;
+  overflow-y: auto;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-popup-form-scroll input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* Button styles */
+.student-popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.student-popup-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.student-popup-btn.red {
+  background-color: #d62828;
+}
+
+.student-popup-btn:hover {
+  opacity: 0.85;
+}
+
+
+.student-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.student-input-group label {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  text-transform: capitalize;
+}

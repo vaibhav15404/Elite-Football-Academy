@@ -1,0 +1,233 @@
+.admin-container {
+  padding: 20px;
+  background-color: #000; /* Black background */
+  color: white;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.admin-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #1c1c1c; /* Dark background for the panel */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    /* width: 80%; */
+    max-width: 1200px;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+
+}
+
+h1, h2 {
+  color: #ff3c3c; /* Red color for headings */
+}
+
+.add-student-btn {
+  background-color: #ff3c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.students-table {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+tr:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+/* Highlighted row (optional) */
+tr.highlight {
+  background-color: #333;
+  border-left: 5px solid #ff3c3c;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.popup h2 {
+  margin-bottom: 20px;
+  color: #ff3c3c;
+}
+
+.form-scroll input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.popup-actions button {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-actions button:first-child {
+  background-color: #28a745; /* green submit */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545 !important; /* red */
+  color: white;
+}
+
+.popup-actions button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.search-container {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.students-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.students-table th,
+.students-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.students-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #111; /* Prevents sticky header from being transparent */
+  z-index: 1;
+}
+
+/* Scroll hint for mobile users */
+.table-wrapper::after {
+  content: "← Scroll →";
+  display: block;
+  text-align: center;
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .table-wrapper::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .students-table {
+    margin-bottom: 1rem;
+  }
+
+  .table-wrapper {
+    max-height: 400px;
+  }
+}
+
+
+.fees-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.fee-history ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fee-history li {
+  padding: 0.5rem 0;
+}
+
+.add-fee {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
